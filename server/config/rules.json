@@ -1,0 +1,140 @@
+{
+  "activity_factors": {
+    "sedentary": 1.2,
+    "light": 1.375,
+    "moderate": 1.55,
+    "active": 1.725,
+    "very_active": 1.9
+  },
+  "goal_factors": {
+    "weight_loss": 0.85,
+    "weight_gain": 1.1,
+    "gym": 1.05,
+    "maintain": 1
+  },
+  "pregnancy_kcal_add": {
+    "1": 0,
+    "2": 340,
+    "3": 450
+  },
+  "pregnancy_boosts": {
+    "protein_g": 25,
+    "iron_mg": 9,
+    "folate_ug": 200,
+    "calcium_mg": 200
+  },
+  "floors": {
+    "female": 1200,
+    "male": 1500
+  },
+  "macro_split": {
+    "protein": 0.2,
+    "carbs": 0.5,
+    "fat": 0.3
+  },
+  "gym_protein_g_per_kg": 1.8,
+  "sodium_limit_mg": 2000,
+  "sodium_limit_mg_default": 2300,
+  "fiber_target_g": 25,
+  "hypertension_food_sodium_flag_mg": 600,
+  "water_target_ml": 2000,
+  "diabetes": {
+    "main_meal_carb_min_ratio": 0.25,
+    "main_meal_carb_max_ratio": 0.35,
+    "injera_max_portions": 1,
+    "allowed_glycemic": ["low", "medium"]
+  },
+  "meal_splits": {
+    "standard": {
+      "breakfast": 0.25,
+      "lunch": 0.35,
+      "snack": 0.1,
+      "dinner": 0.3
+    },
+    "ramadan": {
+      "suhoor": 0.3,
+      "iftar": 0.55,
+      "snack": 0.15
+    }
+  },
+  "portion_steps": [0.5, 1, 1.5, 2],
+  "high_sugar_keywords": ["honey", "sugar", "sweet"],
+  "raw_meat_keywords": ["kitfo", "gored", "kurt", "raw beef"],
+  "child_max_age": 12,
+  "teen_max_age": 17,
+  "child_age_bands": [
+    {
+      "min_months": 0,
+      "max_months": 6,
+      "kcal": 500,
+      "protein_g": 9,
+      "carbs_g": 60,
+      "fat_g": 25,
+      "source": "TODO_VERIFY"
+    },
+    {
+      "min_months": 7,
+      "max_months": 12,
+      "kcal": 700,
+      "protein_g": 11,
+      "carbs_g": 90,
+      "fat_g": 30,
+      "source": "TODO_VERIFY"
+    },
+    {
+      "min_months": 13,
+      "max_months": 36,
+      "kcal": 1000,
+      "protein_g": 13,
+      "carbs_g": 130,
+      "fat_g": 35,
+      "source": "TODO_VERIFY"
+    },
+    {
+      "min_months": 37,
+      "max_months": 96,
+      "kcal": 1400,
+      "protein_g": 19,
+      "carbs_g": 180,
+      "fat_g": 40,
+      "source": "TODO_VERIFY"
+    },
+    {
+      "min_months": 97,
+      "max_months": 156,
+      "kcal": 1800,
+      "protein_g": 34,
+      "carbs_g": 230,
+      "fat_g": 50,
+      "source": "TODO_VERIFY"
+    },
+    {
+      "min_months": 157,
+      "max_months": 216,
+      "kcal": 2200,
+      "protein_g": 46,
+      "carbs_g": 280,
+      "fat_g": 60,
+      "source": "TODO_VERIFY"
+    }
+  ],
+  "micronutrient_defaults": {
+    "iron_mg": 18,
+    "calcium_mg": 1000,
+    "vit_a_ug": 700,
+    "folate_ug": 400
+  },
+  "substitutions": {
+    "butter": "oil",
+    "niter kibbeh": "oil",
+    "meat": "lentils",
+    "beef": "lentils",
+    "chicken": "chickpea flour",
+    "peanut": "sunflower seed",
+    "milk": "water",
+    "egg": "chickpea flour",
+    "yogurt": "oil"
+  },
+  "doctor_notice": "This is general information, not a diagnosis. Please consult a doctor or dietitian before changing your diet.",
+  "fasting_doctor_notice": "If you have a medical condition, are pregnant, or this plan is for a child, ask a doctor before fasting."
+}

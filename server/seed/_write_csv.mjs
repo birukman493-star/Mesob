@@ -1,0 +1,42 @@
+import fs from "fs";
+const SOURCE = "TODO_VERIFY sample — replace with Ethiopian Food Composition Table";
+const impact = "Sample description only. Nutrition numbers are TODO_VERIFY placeholders, not a clinical claim.";
+const foods = [
+  ["Injera","እንጀራ","Buddeena","breakfast,lunch,dinner,suhoor,iftar","1","all","15","piece","180","260","8","50","2","6","180","3.2","40","0","40","medium","","teff flour|water","Cook teff batter on a mitad."],
+  ["Shiro","ሽሮ","Shiroo","lunch,dinner,iftar","1","all","25","bowl","200","280","14","28","12","8","420","4.5","80","20","90","low","","chickpea flour|onion|oil|berbere","Simmer chickpea flour with onion and berbere."],
+  ["Doro wot","ዶሮ ወጥ","Ittoo lukkuu","lunch,dinner,iftar","0","all","80","bowl","250","420","32","12","28","3","680","3","40","80","30","low","egg","chicken|egg|onion|berbere|niter kibbeh","Stew chicken and egg in berbere."],
+  ["Misir wot","ምስር ወጥ","Ittoo misiraa","lunch,dinner,suhoor,iftar","1","all","30","bowl","200","310","16","40","9","10","380","5.2","50","15","140","low","","lentils|onion|berbere|oil","Simmer lentils with berbere."],
+  ["Kik alicha","ክክ አልጫ","Ittoo kikkii","lunch,dinner,iftar","1","all","28","bowl","200","290","15","38","8","9","300","4","45","10","120","low","","split peas|turmeric|onion|oil","Cook a mild split-pea stew."],
+  ["Gomen","ጎመን","Raafuu","lunch,dinner,snack","1","all","20","bowl","150","120","6","10","7","5","250","3.5","180","400","80","low","","collard greens|garlic|oil","Saute greens with garlic."],
+  ["Firfir","ፍርፍር","Firfir","breakfast,dinner,suhoor","1","all","25","plate","220","340","10","52","10","6","450","3","40","10","40","medium","","injera|berbere|onion|oil","Toss shredded injera with berbere sauce."],
+  ["Genfo","ገንፎ","Marqaa","breakfast,suhoor","0","all","20","bowl","200","360","8","48","14","4","200","2.5","30","20","20","medium","","barley flour|niter kibbeh","Stir barley flour into a thick porridge."],
+  ["Bula","ቡላ","Bula","breakfast,snack","1","South Ethiopia","18","bowl","180","240","3","55","1","2","80","1","20","0","10","medium","","false banana starch|water","Stir enset starch into a porridge."],
+  ["Teff porridge","ጤፍ ገንፎ","Marqaa xaafii","breakfast,suhoor","1","all","22","bowl","200","250","9","42","5","6","90","4","60","0","50","low","","teff flour|water","Cook teff flour with water."],
+  ["Kocho","ቆጮ","Qooccoo","lunch,dinner","1","South Ethiopia","20","piece","200","300","2","70","1","4","40","1.2","30","0","8","high","","enset","Bake fermented enset pulp."],
+  ["Besso","ቤሶ","Besso","breakfast,snack","0","Oromia","18","cup","80","320","8","40","14","5","20","2","25","0","20","medium","","roasted barley flour|niter kibbeh","Mix roasted barley flour with spiced butter."],
+  ["Chechebsa","ቸቸብሳ","Chechebsa","breakfast","0","all","30","plate","180","380","10","46","16","3","320","2.2","80","40","25","medium","dairy","flatbread|niter kibbeh|berbere|yogurt","Pan-cook flatbread and top it with spiced butter."],
+  ["Atkilt wot","አትክልት ወጥ","Atkilt","lunch,dinner","1","all","25","bowl","200","180","5","22","8","6","280","1.8","60","200","40","low","","cabbage|carrot|potato|oil","Stew cabbage, carrot, and potato."],
+  ["Kitfo","ክትፎ","Kitfoo","lunch,dinner","0","all","90","plate","150","400","28","2","32","0","520","4","20","10","15","low","","raw beef|niter kibbeh|mitmita","Season minced raw beef with spiced butter."],
+  ["Tibs","ጥብስ","Tibs","lunch,dinner,iftar","0","all","70","plate","180","380","30","6","26","1","480","3.5","20","15","12","low","","beef|onion|oil","Saute beef with onion."],
+  ["Beyaynetu","በየአይነቱ","Beyaynetu","lunch,dinner,iftar","1","all","45","plate","350","520","22","78","14","16","600","8","120","250","160","medium","","injera|misir|gomen|shiro|atkilt","Serve a platter of stews on injera."],
+  ["Kinche","ቅንጬ","Kinchee","breakfast,suhoor","1","all","15","bowl","200","230","7","42","4","5","100","2","20","0","20","low","wheat","cracked wheat|water","Boil cracked wheat."],
+  ["Yogurt","እርጎ","Itittuu","breakfast,snack","0","all","20","cup","150","120","8","12","4","0","80","0.1","180","30","10","low","dairy","milk","Serve plain yogurt."],
+  ["Papaya","ፓፓያ","Paapaayaa","snack","1","all","15","piece","150","60","1","15","0","2","10","0.3","30","80","40","medium","","papaya","Slice ripe papaya."],
+  ["Peanuts","ኦቾሎኒ","Ocholonii","snack","1","all","20","handful","30","170","7","5","14","2","5","0.5","15","0","40","low","peanut","peanuts","Serve roasted peanuts."],
+  ["Ful","ፉል","Fuul","breakfast,suhoor","1","all","20","bowl","200","250","14","32","7","9","350","3.8","60","10","100","low","","fava beans|onion|oil|tomato","Stew fava beans with onion and tomato."],
+  ["Ayib","አይብ","Ayibii","lunch,snack","0","all","18","spoon","80","90","8","3","5","0","150","0.1","120","40","8","low","dairy","curd cheese","Serve fresh ayib."],
+  ["Honey","ማር","Damma","breakfast,snack","1","all","25","spoon","20","60","0","17","0","0","2","0.1","1","0","1","high","","honey","Serve a spoon of honey."],
+  ["Egg","እንቁላል","Killee","breakfast","0","all","12","piece","50","70","6","1","5","0","70","0.9","25","80","22","low","egg","egg","Boil or scramble an egg."],
+  ["Azifa","አዚፋ","Azifaa","lunch,snack","1","all","22","bowl","150","210","12","24","7","8","280","3","40","15","90","low","","green lentils|onion|lemon|oil","Toss lentils with onion and lemon."],
+  ["Key sir","ቀይ ስር","Key sir","lunch,dinner","1","all","18","bowl","150","140","3","20","5","4","260","1.5","30","20","60","medium","","beet|potato|oil","Cook beet and potato."],
+  ["Fatira","ፋጢራ","Fatira","breakfast,iftar","0","all","25","piece","100","300","7","40","12","2","280","1.5","40","20","15","medium","egg|dairy","wheat|egg|oil","Pan-fry layered wheat bread."],
+  ["Gored gored","ጎረድ ጎረድ","Gored gored","lunch,dinner","0","all","85","plate","150","350","30","1","25","0","400","3.8","15","5","10","low","","raw beef|mitmita","Season cubes of raw beef."],
+  ["Kolo","ቆሎ","Qoloo","snack","1","all","10","handful","40","160","5","28","3","4","5","1.5","15","0","15","low","","roasted barley|chickpea","Roast barley and chickpeas."],
+  ["Ambasha","አምባሻ","Ambashaa","breakfast,snack","1","all","15","piece","80","240","6","44","4","2","220","1.2","20","0","10","high","wheat","wheat|sugar|cardamom","Bake a lightly sweet spiced bread."],
+  ["Bunna","ቡና","Buna","snack,suhoor,iftar","1","all","8","cup","100","5","0","1","0","0","5","0.1","5","0","1","low","","coffee","Pour a cup of coffee."],
+];
+const header = ["name_en","name_am","name_om","meal_types","is_fasting_ok","region","cost_birr","portion_unit","portion_grams","kcal","protein_g","carbs_g","fat_g","fiber_g","sodium_mg","iron_mg","calcium_mg","vit_a_ug","folate_ug","glycemic_level","allergens","ingredients","recipe","impact_en","source"];
+const quote = (value) => `"${String(value).replaceAll('"', '""')}"`;
+const lines = [header.join(",")];
+for (const row of foods) lines.push([...row, impact, SOURCE].map(quote).join(","));
+fs.writeFileSync(new URL("./foods.csv", import.meta.url), `\uFEFF${lines.join("\n")}\n`, "utf8");

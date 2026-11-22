@@ -1,0 +1,63 @@
+{
+  "brand": "Mesob",
+  "tagline": "Nyaata Itoophiyaa",
+  "nav": {
+    "dashboard": "Gabatee",
+    "plan": "Karoora nyaataa",
+    "scan": "Skaanarii",
+    "assistant": "Gargaaraa",
+    "reports": "Gabaasa",
+    "consult": "Marii",
+    "pricing": "Kaffaltii",
+    "account": "Akkaawuntii",
+    "admin": "Bulchaa",
+    "dietitian": "Ogeessa nyaataa",
+    "logout": "Ba'i",
+    "login": "Seeni",
+    "start": "Jalqabi"
+  },
+  "landing": {
+    "kicker": "AI nyaata Itoophiyaa",
+    "title": "Nyaanni Itoophiyaa fayyaa keef qophaa'e.",
+    "lead": "Mesob buddeena, ittoo fi sooma karoora nyaataa kee, allerjiidhaa, baajataa fi galma guyyaa irratti ijaara.",
+    "primary": "Jalqabi",
+    "secondary": "Akkaawuntii qaba",
+    "benefitsTitle": "Waan hojjetu",
+    "foodsTitle": "Nyaata mana nyaataa",
+    "stepsTitle": "Galmee irraa hanga nyaata har'aa",
+    "categoriesTitle": "Bakka jalqabaa ja'an"
+  },
+  "auth": {
+    "registerTitle": "Akkaawuntii Mesob banadhu",
+    "loginTitle": "Baga nagaan dhuftan",
+    "name": "Maqaa guutuu",
+    "age": "Umurii",
+    "pin": "PIN (diijitii 4–6)",
+    "language": "Afaan",
+    "email": "Imeelii (filannoo)",
+    "phone": "Bilbila (filannoo)",
+    "create": "Galmaa'i",
+    "enter": "Seeni",
+    "have": "Duraan galmooftanii?",
+    "new": "Haaraa dha?"
+  },
+  "category": {
+    "title": "Gosa nyaataa filadhu",
+    "support": "Mesob akkamitti isin gargaara?",
+    "continue": "Gara piroofaayilii",
+    "patient": "Dhukkubsataa",
+    "pregnancy": "Ulfa",
+    "weight_loss": "Ulfaatina hir'isuu",
+    "weight_gain": "Ulfaatina dabaluu",
+    "gym": "Jiimii",
+    "children": "Daa'imman"
+  },
+  "common": {
+    "loading": "Fe'aa jira…",
+    "retry": "Irra deebi'ii yaali",
+    "empty": "Amma hin jiru.",
+    "save": "Olkaa'i",
+    "sample": "Lakkoofsi nyaataa fakkeenya TODO_VERIFY dha.",
+    "notice": "Kun qorannoo miti. Maaloo doktora yookiin ogeessa nyaataa mariifadhaa."
+  }
+}

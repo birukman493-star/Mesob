@@ -1,0 +1,63 @@
+{
+  "brand": "Mesob",
+  "tagline": "Ethiopian nutrition",
+  "nav": {
+    "dashboard": "Dashboard",
+    "plan": "Meal plan",
+    "scan": "Scanner",
+    "assistant": "Assistant",
+    "reports": "Reports",
+    "consult": "Consult",
+    "pricing": "Pricing",
+    "account": "Account",
+    "admin": "Admin",
+    "dietitian": "Dietitian",
+    "logout": "Log out",
+    "login": "Log in",
+    "start": "Get started"
+  },
+  "landing": {
+    "kicker": "AI Ethiopian nutrition",
+    "title": "Eat well, the Ethiopian way",
+    "lead": "Personal meal plans, food scanning and an AI nutrition assistant built around injera, shiro and the foods you love.",
+    "primary": "Get started",
+    "secondary": "I already have an account",
+    "benefitsTitle": "What you can do",
+    "foodsTitle": "Foods in the kitchen",
+    "stepsTitle": "From registration to today's plate",
+    "categoriesTitle": "Six places to begin"
+  },
+  "auth": {
+    "registerTitle": "Create your Mesob account",
+    "loginTitle": "Welcome back",
+    "name": "Full name",
+    "age": "Age",
+    "pin": "PIN (4–6 digits)",
+    "language": "Preferred language",
+    "email": "Email (optional)",
+    "phone": "Phone (optional)",
+    "create": "Create account",
+    "enter": "Log in",
+    "have": "Already registered?",
+    "new": "New to Mesob?"
+  },
+  "category": {
+    "title": "What brings you to Mesob AI?",
+    "support": "How should Mesob support you?",
+    "continue": "Continue to profile",
+    "patient": "Patients",
+    "pregnancy": "Pregnancy",
+    "weight_loss": "Weight loss",
+    "weight_gain": "Weight gain",
+    "gym": "Gym & fitness",
+    "children": "Children"
+  },
+  "common": {
+    "loading": "Loading…",
+    "retry": "Try again",
+    "empty": "Nothing here yet.",
+    "save": "Save",
+    "sample": "Nutrition figures are sample values marked TODO_VERIFY until a verified food table replaces them.",
+    "notice": "This is general information, not a diagnosis. Please consult a doctor or dietitian."
+  }
+}

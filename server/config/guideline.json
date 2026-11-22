@@ -1,0 +1,40 @@
+{
+  "documents": [
+    {
+      "title": "First 1,000 days — sample",
+      "audience": "pregnancy",
+      "min_age_months": 0,
+      "max_age_months": 24,
+      "body": "TODO_VERIFY: Sample placeholder for the official first-1,000-days guidance. Iron, folate, and regular meals are flagged for review. Replace this text with the document supplied by the health team.",
+      "source": "TODO_VERIFY",
+      "reviewed_by": null
+    },
+    {
+      "title": "Diabetes and Ethiopian staples — sample",
+      "audience": "patient",
+      "min_age_months": 216,
+      "max_age_months": 1440,
+      "body": "TODO_VERIFY: Sample placeholder. Carbohydrate foods, including injera, are planned against the day's carbohydrate target. This is not medical advice.",
+      "source": "TODO_VERIFY",
+      "reviewed_by": null
+    },
+    {
+      "title": "School-age eating pattern — sample",
+      "audience": "children",
+      "min_age_months": 60,
+      "max_age_months": 216,
+      "body": "TODO_VERIFY: Sample placeholder. This app does not assign a weight-loss calorie deficit to children or teenagers. Replace with the official age program.",
+      "source": "TODO_VERIFY",
+      "reviewed_by": null
+    },
+    {
+      "title": "Everyday Ethiopian meals — sample",
+      "audience": "all",
+      "min_age_months": 0,
+      "max_age_months": 1440,
+      "body": "TODO_VERIFY: Sample placeholder. Meal plans use foods loaded from the seed file. Numbers stay marked TODO_VERIFY until the Ethiopian Food Composition Table is loaded.",
+      "source": "TODO_VERIFY",
+      "reviewed_by": null
+    }
+  ]
+}

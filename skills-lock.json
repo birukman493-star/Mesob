@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "skills": {
+    "threejs-webgl": {
+      "source": "freshtechbro/claudedesignskills",
+      "commit": "1da73febff0c3e1dfefc07f8a5ef8f7d1dfdb6cd",
+      "sourceType": "github",
+      "skillPath": ".claude/skills/threejs-webgl/SKILL.md",
+      "computedHash": "30fd8428b0c7eff6a725a42a9aee9c39e3c319cd95f2557a1bbbe8ade1baefb3"
+    }
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "brand": "መሶብ",
+  "tagline": "የኢትዮጵያ አመጋገብ",
+  "nav": {
+    "dashboard": "ዳሽቦርድ",
+    "plan": "የምግብ እቅድ",
+    "scan": "ስካነር",
+    "assistant": "ረዳት",
+    "reports": "ሪፖርት",
+    "consult": "ምክክር",
+    "pricing": "ክፍያ",
+    "account": "መለያ",
+    "admin": "አስተዳዳሪ",
+    "dietitian": "የአመጋገብ ባለሙያ",
+    "logout": "ውጣ",
+    "login": "ግባ",
+    "start": "ጀምር"
+  },
+  "landing": {
+    "kicker": "የኢትዮጵያ አመጋገብ AI",
+    "title": "ለጤናዎ የተዘጋጀ የኢትዮጵያ ምግብ እቅድ።",
+    "lead": "መሶብ እንጀራ፣ ወጥ እና የጾም ምግቦችን ከምድብዎ፣ ከአለርጂ፣ ከበጀት እና ከዕለታዊ ግብ ይገነባል።",
+    "primary": "ጀምር",
+    "secondary": "መለያ አለኝ",
+    "benefitsTitle": "ምን ማድረግ ይቻላል",
+    "foodsTitle": "በወጥ ቤቱ ያሉ ምግቦች",
+    "stepsTitle": "ከምዝገባ እስከ የዛሬ ሳህን",
+    "categoriesTitle": "ስድስት መነሻዎች"
+  },
+  "auth": {
+    "registerTitle": "የመሶብ መለያ ይክፈቱ",
+    "loginTitle": "እንኳን ደህና መጡ",
+    "name": "ሙሉ ስም",
+    "age": "ዕድሜ",
+    "pin": "ፒን (4–6 አሃዝ)",
+    "language": "ቋንቋ",
+    "email": "ኢሜይል (አማራጭ)",
+    "phone": "ስልክ (አማራጭ)",
+    "create": "ተመዝገብ",
+    "enter": "ግባ",
+    "have": "ተመዝግበዋል?",
+    "new": "አዲስ ነዎት?"
+  },
+  "category": {
+    "title": "የአመጋገብ ምድብ ይምረጡ",
+    "support": "መሶብ እንዴት ይደግፍዎ?",
+    "continue": "ወደ መገለጫ ቀጥል",
+    "patient": "ታካሚዎች",
+    "pregnancy": "እርግዝና",
+    "weight_loss": "ክብደት መቀነስ",
+    "weight_gain": "ክብደት መጨመር",
+    "gym": "ጂም",
+    "children": "ልጆች"
+  },
+  "common": {
+    "loading": "በመጫን ላይ…",
+    "retry": "እንደገና ሞክር",
+    "empty": "እስካሁን ምንም የለም።",
+    "save": "አስቀምጥ",
+    "sample": "የአመጋገብ ቁጥሮች TODO_VERIFY የሆኑ ናሙናዎች ናቸው።",
+    "notice": "ይህ ምርመራ አይደለም። እባክዎ ሐኪም ወይም የአመጋገብ ባለሙያ ያማክሩ።"
+  }
+}

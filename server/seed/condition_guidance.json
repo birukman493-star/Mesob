@@ -1,0 +1,179 @@
+{
+  "metadata": {
+    "title": "Nutrition Guidance for Selected Health Conditions",
+    "version": "1.0",
+    "created": "2026-11-21",
+    "purpose": "Educational food guidance for a nutrition app. Not a clinical diet prescription.",
+    "review_status": "Research-based draft; requires review and approval by a licensed dietitian/clinician before deployment.",
+    "language_note": "Food examples are generalized and should be localized for Ethiopian foods, portions, availability, and preparation methods."
+  },
+  "safety_rules": [
+    "Do not diagnose a condition from food choices, symptoms, or user-entered measurements.",
+    "Do not use this file to prescribe calories, carbohydrate grams, sodium, potassium, fluids, or supplements for an individual.",
+    "Do not recommend stopping, changing, or adjusting medications.",
+    "If a user reports possible heart attack symptoms (chest pressure/pain, shortness of breath, sweating, nausea, fainting, or pain spreading to arm/jaw/back), advise emergency medical help immediately; food guidance is not treatment.",
+    "For pregnancy, diabetes during pregnancy, complex diabetes, kidney disease, heart failure, or multiple conditions, recommend personalized clinician/dietitian guidance.",
+    "Food lists are not absolute prohibitions unless explicitly marked as pregnancy food-safety avoidances. Portion, preparation, medication, culture, and clinical context matter."
+  ],
+  "conditions": {
+    "pregnancy": {
+      "display_name": "Pregnancy",
+      "goal": "Support maternal health and fetal growth through varied nutrient-dense foods and pregnancy food safety.",
+      "prefer": [
+        "Variety of vegetables and fruits; wash produce thoroughly",
+        "Legumes such as lentils, peas, beans, chickpeas, shiro made with safe ingredients",
+        "Whole grains and higher-fiber starches such as oats, whole grains, and appropriately portioned injera",
+        "Well-cooked eggs, lean poultry/meat, and low-mercury seafood",
+        "Pasteurized milk, yogurt, and other pasteurized dairy or fortified alternatives",
+        "Nuts and seeds if not allergic",
+        "Folic-acid/prenatal supplementation only according to prenatal-care guidance"
+      ],
+      "limit_or_caution": [
+        "Caffeine: keep below 200 mg/day (source-specific guidance)",
+        "Foods and drinks high in added sugar",
+        "High-salt foods",
+        "Excess saturated fat and frequent fried foods",
+        "Seafood choices and quantities: use local clinician/public-health guidance because mercury levels vary by species and region"
+      ],
+      "avoid_food_safety": [
+        "Alcohol: avoid completely during pregnancy",
+        "Raw or undercooked meat, poultry, seafood, and eggs",
+        "Unpasteurized milk and products made from it",
+        "High-mercury fish species listed by the relevant national guidance",
+        "Unwashed produce and unsafe food handling"
+      ],
+      "nutrient_focus": [
+        "Folate/folic acid",
+        "Iron",
+        "Calcium",
+        "Iodine",
+        "Protein",
+        "Vitamin D",
+        "Choline",
+        "Omega-3 fatty acids"
+      ],
+      "app_rules": [
+        "Never offer weight-loss plans during pregnancy.",
+        "Do not calculate pregnancy calorie or supplement prescriptions from this general guidance alone.",
+        "Display prenatal-care/dietitian consultation prompt.",
+        "Ask trimester only if needed for a clinician-reviewed feature; do not invent trimester-specific nutrient targets."
+      ],
+      "sources": [
+        "https://www.nhs.uk/best-start-in-life/pregnancy/healthy-eating-in-pregnancy/",
+        "https://www.niddk.nih.gov/health-information/weight-management/healthy-eating-physical-activity-for-life/health-tips-for-pregnant-women",
+        "https://www.acog.org/womens-health/faqs/healthy-eating-during-pregnancy",
+        "https://www.fda.gov/food/people-risk-foodborne-illness/dietary-advice-and-during-pregnancy"
+      ]
+    },
+    "diabetes": {
+      "display_name": "Diabetes",
+      "goal": "Support blood-glucose management with balanced meals, appropriate carbohydrate portions, and personalized care.",
+      "prefer": [
+        "Non-starchy vegetables (e.g., leafy greens, cabbage, tomatoes, cucumbers, carrots)",
+        "Fiber-rich, minimally processed carbohydrate foods in portions matched to individual needs",
+        "Legumes such as lentils, beans, peas, chickpeas, and shiro/misir",
+        "Whole fruits rather than juice most often",
+        "Lean proteins such as eggs, fish, poultry, and legumes",
+        "Unsaturated fats from nuts, seeds, avocado, and plant oils",
+        "Water and unsweetened beverages"
+      ],
+      "limit_or_caution": [
+        "Sugar-sweetened drinks, sweetened juices, syrups, and frequent sweets",
+        "Highly refined grains and large portions of starchy foods",
+        "Highly processed foods",
+        "Foods high in saturated fat",
+        "Carbohydrate portions: do not assume all users need the same amount or must eliminate carbs"
+      ],
+      "avoid_or_not_recommended": [
+        "Do not recommend a very restrictive diet or elimination of all carbohydrates without clinician supervision",
+        "Do not suggest changing insulin or diabetes medication based on a meal recommendation",
+        "Do not label foods as universally forbidden; individualized carbohydrate management is important"
+      ],
+      "meal_pattern_example": {
+        "pattern": "Diabetes Plate (general educational pattern)",
+        "components": [
+          "About half the plate: non-starchy vegetables",
+          "About one-quarter: lean protein",
+          "About one-quarter: quality carbohydrate (e.g., legumes, whole grains, starchy vegetables, fruit, dairy)"
+        ],
+        "note": "This is a visual starting point, not a fixed prescription; portions and carbohydrate timing may need adjustment for medications, glucose readings, and clinical needs."
+      },
+      "app_rules": [
+        "Do not let the AI calculate nutrition values; use verified database values and deterministic calculations.",
+        "Do not recommend fasting or meal skipping for users on glucose-lowering medication unless their clinician's plan specifically includes it.",
+        "If the user reports symptoms or a glucose value suggesting hypoglycemia, route to a clinician-reviewed emergency/low-glucose protocol rather than generic meal advice.",
+        "Offer clinician/dietitian review, especially for insulin users, pregnancy, kidney disease, or recurrent low glucose."
+      ],
+      "sources": [
+        "https://diabetes.org/food-nutrition/eating-healthy",
+        "https://diabetes.org/food-nutrition/understanding-carbs",
+        "https://www.heart.org/en/health-topics/diabetes/prevention--treatment-of-diabetes/diabetes-and-your-diet",
+        "https://professional.diabetes.org/sites/dpro/files/2026-01/nutrition-faqs-new-v5-final-1-21-26.pdf"
+      ]
+    },
+    "post_heart_attack_or_heart_disease": {
+      "display_name": "After a Heart Attack / Heart Disease",
+      "goal": "Support cardiovascular recovery and long-term heart health. This is not treatment for an acute heart attack.",
+      "prefer": [
+        "Vegetables and fruits in variety",
+        "Whole grains and higher-fiber foods",
+        "Beans, lentils, peas, nuts, and seeds",
+        "Fish and seafood as advised by the care team",
+        "Lean poultry and lean, unprocessed protein choices",
+        "Unsaturated plant oils in place of butter, ghee, and animal fats",
+        "Minimally processed meals prepared with little added salt"
+      ],
+      "limit_or_caution": [
+        "Sodium/salt, especially packaged, processed, preserved, and restaurant foods",
+        "Saturated fat from fatty meat, butter/ghee, full-fat dairy, coconut/palm oils",
+        "Added sugar and sweetened drinks",
+        "Processed meats",
+        "Alcohol; follow the cardiology team's advice, especially with medications"
+      ],
+      "avoid_or_not_recommended": [
+        "Trans-fat-containing foods; avoid industrial trans fats",
+        "Do not use diet as a substitute for prescribed cardiac rehabilitation, medication, or follow-up",
+        "Do not provide a personalized sodium/fluid target unless clinician-approved"
+      ],
+      "app_rules": [
+        "If heart attack symptoms are happening now or suspected, direct the user to emergency services immediately.",
+        "Label this mode 'heart-health / recovery nutrition' rather than implying foods treat or reverse a heart attack.",
+        "Heart failure, kidney disease, or fluid restrictions can change sodium and fluid advice; flag for clinician review."
+      ],
+      "sources": [
+        "https://www.heart.org/en/healthy-living/healthy-eating/eat-smart/nutrition-basics/aha-diet-and-lifestyle-recommendations/",
+        "https://professional.heart.org/en/science-news/2021-dietary-guidance-to-improve-cardiovascular-health/top-things-to-know"
+      ]
+    },
+    "hypotension": {
+      "display_name": "Low Blood Pressure (Hypotension)",
+      "goal": "Support hydration and symptom-aware eating while encouraging medical evaluation to identify the cause.",
+      "prefer": [
+        "Adequate water/fluid intake if the person has no clinician-imposed fluid restriction",
+        "Small, more frequent meals if symptoms occur after large meals",
+        "Balanced meals; avoid skipping meals if that worsens symptoms",
+        "Foods providing vitamin B12 and folate as part of a balanced diet, when relevant to deficiency risk"
+      ],
+      "limit_or_caution": [
+        "Alcohol, which can worsen dehydration or symptoms",
+        "Very large meals if the user experiences post-meal blood-pressure drops",
+        "Salt increase: only if a clinician recommends it after reviewing the cause and other conditions"
+      ],
+      "avoid_or_not_recommended": [
+        "Do not automatically prescribe high-salt foods or salt supplements",
+        "Do not advise fluid loading when the user has heart failure, kidney disease, or fluid restriction",
+        "Do not treat fainting, severe weakness, confusion, or sudden symptoms with food advice alone"
+      ],
+      "app_rules": [
+        "Ask if symptoms are present and encourage medical assessment for recurrent dizziness, fainting, or symptomatic low readings.",
+        "Never infer that hypotension requires extra salt; cause and other health conditions matter.",
+        "If severe symptoms, collapse, chest pain, breathlessness, or confusion are reported, advise emergency care."
+      ],
+      "sources": [
+        "https://www.nhs.uk/conditions/low-blood-pressure-hypotension/",
+        "https://www.mayoclinic.org/diseases-conditions/low-blood-pressure/diagnosis-treatment/drc-20355470",
+        "https://www.heart.org/en/health-topics/high-blood-pressure/the-facts-about-high-blood-pressure/low-blood-pressure-when-blood-pressure-is-too-low"
+      ]
+    }
+  }
+}
